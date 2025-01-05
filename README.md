@@ -19,6 +19,7 @@ https://d0m0n.github.io/kadai05_api/
 
 ## ⑤ 工夫した点・こだわった点
 
+- Firebase を利用。
 - Google Map API を利用。
 - 国土地理院 Geolocation API を利用。
 - 2 つの API を組み合わせてストレスなく地図表示をできるようにしました。
