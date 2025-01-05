@@ -10,7 +10,7 @@
 
 ## ③DEMO
 
-https://d0m0n.github.io/kadai04_chat/
+https://d0m0n.github.io/kadai05_api/
 
 ## ④ 作ったアプリケーション用の ID または Password がある場合
 
