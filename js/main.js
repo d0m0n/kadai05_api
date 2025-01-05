@@ -26,12 +26,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBy5AyrjYBLFBr60dqVNI3khxRBjtYWf28",
-  authDomain: "kadai05api.firebaseapp.com",
-  projectId: "kadai05api",
-  storageBucket: "kadai05api.firebasestorage.app",
-  messagingSenderId: "378787989705",
-  appId: "1:378787989705:web:4a654eb9bf4a166d3d6518",
+  apiKey: "{APIキー}",
+  authDomain: "{APIキー}",
+  projectId: "{APIキー}",
+  storageBucket: "{APIキー}",
+  messagingSenderId: "{APIキー}",
+  appId: "{APIキー}",
 };
 
 const app = initializeApp(firebaseConfig);
