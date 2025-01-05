@@ -1,0 +1,157 @@
+h1 {
+  font-size: 28px;
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2em;
+}
+
+body {
+  height: 100%;
+  background-color: lightgrey;
+}
+
+.top {
+  position: relative;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.topImg {
+  width: 100%;
+  height: 100px;
+  object-fit: none;
+  object-position: 30% 50%;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.formArea {
+  margin-left: 40%;
+}
+
+/* 目的地リストと地図をテーブル構造でレスポンシブに表示 */
+.list {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%; /* table幅を100%に指定 */
+  border: none;
+}
+.list th,
+.list td {
+  display: block; /* セルをブロック要素に指定 */
+  width: 100%; /* セルを親要素いっぱいの幅に指定 */
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+  box-sizing: border-box;
+}
+.list th {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .list th,
+  .list td {
+    display: table-cell; /* デフォルト値に指定 */
+    border-bottom: 1px solid #ccc;
+    color: #000;
+  }
+  .list th {
+    color: #000;
+  }
+}
+
+/* 地図の表示 */
+#map {
+  min-height: 500px;
+  border-radius: 8px;
+  background-color: gray;
+}
+
+/* 吹き出しの設定 */
+.balloon {
+  background-color: white;
+  color: darkslategray;
+  padding: 10px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.balloon:hover {
+  box-shadow: 0px 2px 4px gray;
+  background-color: white;
+  color: darkslategray;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.balloon:active,
+.balloon:focus {
+  background-color: darkslategray;
+  color: white;
+  transform: translateY(1px);
+}
+
+.date {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.address {
+  font-weight: 1000;
+  font-size: 18px;
+}
+
+.note {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* 目的地の表示と×ボタンを横並びにする */
+.destination {
+  display: flex;
+}
+
+/* デリート用の×ボタン*/
+.delete {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.delete:hover {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+.delete:active,
+.delete:focus {
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}

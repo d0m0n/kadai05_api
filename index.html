@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>たびのしおり</title>
+    <!-- faviconの設定 -->
+    <link rel="icon" href="./img/favicon.svg" />
+    <!-- Google Fontsの設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=M+PLUS+Rounded+1c&family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <!-- タイトル画像 -->
+    <div class="top">
+      <img class="topImg" src="/img/top.jpg" alt="トップ画像" />
+      <h1 class="title">たびのしおり</h1>
+    </div>
+    <!-- 入力フォーム -->
+    <div class="formArea">
+      <div>
+        <input type="date" id="datepicker"  value="" />
+      </div>
+      <div>
+        <input type="text" id="address" placeholder="住所を入力してください" />
+      </div>
+      <div>
+        <textarea id="note" placeholder="メモを入力してください"></textarea>
+      </div>
+      <div>
+        <button id="sendPlace">送信</button>
+      </div>
+    </div>
+    <!-- リストとマップのテーブル表示 -->
+    <table class="list">
+      <tr>
+        <th>
+          <!-- リストの描画領域 -->
+          <div id="output"></div>
+        </th>
+        <td>
+          <!-- マップの描画領域 -->
+          <div id="map"></div>
+        </td>
+      </tr>
+    </table>
+    <!-- 緯度経度のチェック用 -->
+    <!-- 経度<input type="text" name="lat" id="lat"><br> -->
+    <!-- 経度<input type="text" name="lng" id="lng"><br> -->
+
+    <!-- Google Mapのapiを設定 -->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyAFYEWMM7hftSeZ56wsth8MzFNG5ESjEmc&language=ja"></script>
+    <!--必ず！！！自分で作成したjsより前に貼り付けてください-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!---jQueryが必ず先！！！-->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/map.js"></script>
+  </body>
+</html>
