@@ -34,8 +34,6 @@ https://d0m0n.github.io/kadai04_chat/
 
 - [質問]
 - [感想]
-  少しずつ css と仲良くなってきているような気がします。反復して続けることが大事だと実感しました。
-
 - [参考記事]
 - Google Maps API を使ってみた（https://qiita.com/Haruka-Ogawa/items/997401a2edcd20e61037）
 - 国土地理院の API を使用して無料でジオコーディング(住所 → 経度緯度)を行う方法（https://taitan916.info/blog/archives/3186）
