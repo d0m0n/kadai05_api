@@ -45,7 +45,47 @@ body {
 }
 
 .formArea {
-  margin-left: 40%;
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+}
+
+.form {
+  display: inline-block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: darkslategrey;
+  width: 460px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+}
+
+.send {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: darkslategrey;
+  border: none;
+  width: 460px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.send:hover {
+  box-shadow: 0px 2px 4px black;
+  background-color: white;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.send:active,
+.send:focus {
+  background-color: darkslategray;
+  color: white;
+  transform: translateY(1px);
 }
 
 /* 目的地リストと地図をテーブル構造でレスポンシブに表示 */
